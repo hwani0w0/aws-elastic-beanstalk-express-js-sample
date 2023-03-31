@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 8080;
-const html = `
+const html = '
 <!DOCTYPE html>
 <html>
   <head>
@@ -96,8 +96,9 @@ const html = `
     </div>
   </body>
 </html>
-`;
-app.get('/', (req, res) => res.send('Start DevOps...'));
+';
+
+app.get('/', (req, res) => res.send('Final Pipeline'));
 
 app.listen(port);
 console.log(`App running on http://localhost:${port}`);
